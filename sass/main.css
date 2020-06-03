@@ -1,3 +1,80 @@
+ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
 
+html {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+}
+
+body {
+  background-color: #EDEDEC;
+  font-size: 16px;
+  min-width: 100%;
+  overflow-x: hidden;
+}
+
+#container-main *,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+::selection {
+  /* WebKit/Blink Browsers */
+}
+
+::-moz-selection {
+  /* Gecko Browsers */
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  --columns: 14;
+  width: 1500px;
+  margin: 0px auto;
+}
+
+section,
+header {
+  --width: 14;
+  --gap-constant: 0.0%;
+  --initialbasis: calc(var(--width) / var(--columns) * 100%);
+  --gap: calc((var(--columns, 16) - var(--width, 0)) * var(--gap-constant));
+  flex-basis: calc(var(--initialbasis) - var(--gap));
+}
+
+@media (min-width: 1500px) {
+  #hero {
+    --width: 14;
+  }
+
+  #introduction {
+    --width: 14;
+  }
+
+  #portfolio-featured {
+    --width: 14;
+  }
+
+  #twitch {
+    --width: 14;
+  }
+
+  #commission {
+    --width: 14;
+  }
+
+  #footer {
+    --width: 14;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
