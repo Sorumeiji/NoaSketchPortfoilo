@@ -1,6 +1,18 @@
+ul {
+    margin: 0;
+    padding: 0;
+}
+
 ul li {
     list-style-type: none;
     display: inline-block;
-    margin: 0;
-    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+
+.ginger_gold {
+    width: 50%;
+    position: absoulte;
 }

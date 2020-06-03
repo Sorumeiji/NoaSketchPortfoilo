@@ -1,25 +1,36 @@
-ul li {
-  list-style-type: none;
-  display: inline-block;
+ul {
   margin: 0;
   padding: 0;
 }
 
+ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+img {
+  width: 100%;
+}
+
+.ginger_gold {
+  width: 50%;
+  position: absoulte;
+}
+
 html {
   box-sizing: border-box;
-  height: 100%;
-  width: 100%;
-  margin: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   background-color: #EDEDEC;
-  font-size: 16px;
-  min-width: 100%;
+  margin: 0px auto;
+  padding: 0px auto;
   overflow-x: hidden;
 }
 
-#container-main *,
+*,
 *:before,
 *:after {
   box-sizing: inherit;
@@ -33,46 +44,39 @@ body {
   /* Gecko Browsers */
 }
 
-main {
+main,
+#container-main header {
   display: flex;
-  flex-direction: row;
   flex-flow: row wrap;
+  justify-content: center;
   --columns: 14;
-  width: 1500px;
-  margin: 0px auto;
 }
 
 section,
-header {
+header,
+footer {
+  margin: 0px auto;
   --width: 14;
-  --gap-constant: 0.0%;
+  --gap-constant: 0.3%;
   --initialbasis: calc(var(--width) / var(--columns) * 100%);
-  --gap: calc((var(--columns, 16) - var(--width, 0)) * var(--gap-constant));
+  --gap: calc((var(--columns) - var(--width)) * var(--gap-constant));
   flex-basis: calc(var(--initialbasis) - var(--gap));
 }
 
+#container-main {
+  min-width: 100%;
+  background-color: #EDEDEC;
+}
+
+#container-main header {
+  background: #D7D3C4;
+  display: flex;
+  flex-flow: row wrap;
+  min-width: 100%;
+}
+
 @media (min-width: 1500px) {
-  #hero {
-    --width: 14;
-  }
-
-  #introduction {
-    --width: 14;
-  }
-
-  #portfolio-featured {
-    --width: 14;
-  }
-
-  #twitch {
-    --width: 14;
-  }
-
-  #commission {
-    --width: 14;
-  }
-
-  #footer {
+  header {
     --width: 14;
   }
 }
