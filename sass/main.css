@@ -1,3 +1,32 @@
+html,
+body {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #ededec;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+::selection {
+  background: #2b2b2b;
+  color: white;
+  /* WebKit/Blink Browsers */
+}
+
+::-moz-selection {
+  background: #2b2b2b;
+  color: white;
+  /* Gecko Browsers */
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -8,76 +37,181 @@ ul li {
   display: inline-block;
 }
 
-img {
-  width: 100%;
+a {
+  text-decoration: none;
 }
 
-.ginger_gold {
-  width: 50%;
-  position: absoulte;
+img {
+  width: 100%;
+  min-height: auto;
+  display: block;
+}
+
+input {
+  display: inline-block;
+  font-family: "Laila", serif;
+  padding: 1% 4%;
+  margin: 0px auto;
+  font-weight: 600;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn-gold {
+  color: #C4996D;
+  background-color: #2B2B2B;
 }
 
 html {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  font-size: 100%;
 }
 
-body {
-  background-color: #EDEDEC;
-  margin: 0px auto;
-  padding: 0px auto;
-  overflow-x: hidden;
+:root {
+  --base-size: 1em;
+  --type-scale: 1.250;
+  --h5: calc(var(--base-size) * var(--type-scale));
+  --h4: calc(var(--h5) * var(--type-scale));
+  --h3: calc(var(--h4) * var(--type-scale));
+  --h2: calc(var(--h3) * var(--type-scale));
+  --h1: calc(var(--h2) * var(--type-scale));
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
+h1 {
+  font-size: var(--h1);
 }
 
-::selection {
-  /* WebKit/Blink Browsers */
+h2 {
+  font-size: var(--h2);
 }
 
-::-moz-selection {
-  /* Gecko Browsers */
+h3 {
+  font-size: var(--h3);
 }
 
+h4 {
+  font-size: var(--h4);
+}
+
+h5 {
+  font-size: var(--h5);
+}
+
+p {
+  font-size: var(--base-size);
+}
+
+ul {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+
+.text-light {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #363636;
+}
+
+.text-main {
+  font-family: "Laila", serif;
+  font-weight: 600;
+  color: #363636;
+  text-transform: uppercase;
+}
+
+small,
+.text_small {
+  font-size: calc(var(--base-size) / var(--type-scale));
+}
+
+@media (min-width: 1500px) {
+  :root {
+    --type-scale: 1.250;
+  }
+}
 main,
-#container-main header {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  --columns: 14;
+header {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
 }
 
-section,
-header,
-footer {
-  margin: 0px auto;
-  --width: 14;
-  --gap-constant: 0.3%;
-  --initialbasis: calc(var(--width) / var(--columns) * 100%);
-  --gap: calc((var(--columns) - var(--width)) * var(--gap-constant));
-  flex-basis: calc(var(--initialbasis) - var(--gap));
+main {
+  margin-top: 10%;
+  z-index: 1;
 }
 
-#container-main {
-  min-width: 100%;
-  background-color: #EDEDEC;
+.curve {
+  grid-column: 1/13;
+  position: relative;
+  top: 10%;
 }
 
-#container-main header {
-  background: #D7D3C4;
-  display: flex;
-  flex-flow: row wrap;
-  min-width: 100%;
+.curve svg {
+  width: 100%;
 }
 
 @media (min-width: 1500px) {
   header {
-    --width: 14;
+    background: url(/images/header.png) no-repeat;
+    background-color: #D7D3C4;
+  }
+
+  header .navbar {
+    display: grid;
+    grid-column: 6/12;
+  }
+
+  header .navbar ul li {
+    margin: 5% 1.5% 0 0;
+  }
+
+  header .navbar ul li a {
+    color: #2b2b2b;
+    font-size: 1.25em;
+  }
+
+  header .navbar ul li a:hover {
+    color: #996C3F;
+  }
+
+  header .hero {
+    display: grid;
+    grid-column: 6/12;
+    margin-top: 20%;
+  }
+
+  .hero h1 {
+    font-size: 7.451em;
+    padding: 0;
+    margin: 0;
+  }
+
+  .hero h2 {
+    padding: 0;
+    margin: -0.8em 0 0 0.3em;
+  }
+
+  .hero a input {
+    margin: 2em 0 0 0.9em;
+    font-size: 1.25em;
+  }
+
+  .navbar nav ul {
+    font-size: 1.25em;
+  }
+
+  #inside {
+    grid-column: 1/12;
+  }
+}
+@media (min-width: 1500px) {
+  main .introduction {
+    grid-column: 6/8;
   }
 }
 

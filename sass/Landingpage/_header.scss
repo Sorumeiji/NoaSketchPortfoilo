@@ -1,0 +1,54 @@
+@media(min-width: 1500px) {
+    header {
+        background: url(/images/header.png) no-repeat;
+        background-color: #D7D3C4;
+    }
+
+    header .navbar {
+        display: grid;
+        grid-column: 6 / 12;
+    }
+
+    header .navbar ul li {
+        margin: 5% 1.5% 0 0;
+    }
+
+    header .navbar ul li a {
+        color: #2b2b2b;
+        font-size: 1.25em;
+    }
+
+    header .navbar ul li a:hover {
+        color: #996C3F;
+    }
+
+    header .hero {
+        display: grid;
+        grid-column: 6 / 12;
+        margin-top: 20%;
+    }
+
+    .hero h1 {
+        font-size: 7.451em;
+        padding: 0;
+        margin: 0;
+    }
+
+    .hero h2 {
+        padding: 0;
+        margin: -0.8em 0 0 0.3em;
+    }
+
+    .hero a input {
+        margin: 2em 0 0 0.9em;
+        font-size: 1.25em;
+    }
+
+    .navbar nav ul {
+        font-size: 1.25em;
+    }
+
+    #inside {
+        grid-column: 1 / 12;
+    }
+}

@@ -11,18 +11,20 @@
 ## Colors
 
 Background-netural: #EDEDEC;
-Text-color: #434245;
+Text-color: #363636;
 Accent Color: #996C3F;
 Accent Color 2: #E7E4DD
+Button Color: #2B2B2B
+
+363636
 
 ## Fonts
 
-Adobe Heiti - Header
+Laila - Header
 https://fonts.adobe.com/fonts/adobe-heiti#fonts-section
 
 font-family: 'Exo 2', sans-serif;
 
-Adobe Garamond - Text
+Montserrat - Text
 https://fonts.adobe.com/fonts/adobe-garamond
 font-family: 'mayashiregular', sans-serif;
-
