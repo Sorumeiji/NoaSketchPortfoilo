@@ -3,8 +3,6 @@ header {
     height: 100%;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    position: relative;
-    z-index: 999;
 }
 
 main {
