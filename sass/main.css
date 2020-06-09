@@ -185,6 +185,8 @@ main {
     display: grid;
     grid-column: 6/12;
     margin-top: 20%;
+    position: relative;
+    z-index: 999;
   }
 
   .hero h1 {
