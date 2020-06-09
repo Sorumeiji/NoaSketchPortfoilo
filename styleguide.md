@@ -16,8 +16,6 @@ Accent Color: #996C3F;
 Accent Color 2: #E7E4DD
 Button Color: #2B2B2B
 
-363636
-
 ## Fonts
 
 Laila - Header
