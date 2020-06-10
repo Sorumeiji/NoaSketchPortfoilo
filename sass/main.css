@@ -140,11 +140,6 @@ header {
   grid-template-columns: repeat(12, 1fr);
 }
 
-main {
-  z-index: 1;
-  margin-top: 10%;
-}
-
 .curve {
   grid-column: 1/13;
   position: sticky;
@@ -155,12 +150,71 @@ main {
   width: 100%;
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 1100px) {
   header {
     background: url(../images/header.png) no-repeat;
-    background-color: #D7D3C4;
+    background-color: #d7d3c4;
   }
 
+  header .navbar {
+    display: grid;
+    grid-column: 6/12;
+  }
+
+  header .hero {
+    display: grid;
+    grid-column: 6/12;
+    margin-top: 20%;
+    position: relative;
+    z-index: 999;
+  }
+
+  header .navbar ul li {
+    margin: 7% 1.5% 0 0;
+  }
+
+  header .navbar ul li a {
+    color: #2b2b2b;
+    font-size: 0.8em;
+  }
+
+  header .navbar ul li a:hover {
+    color: #996c3f;
+  }
+
+  .hero h1 {
+    font-size: 4.768em;
+    padding: 0;
+    margin: 0;
+  }
+
+  .hero h2 {
+    font-size: 1.953em;
+    padding: 0;
+    margin: -0.8em 0 0 0.3em;
+  }
+
+  .hero a input {
+    margin: 2em 0 0 0.9em;
+    font-size: 1.25em;
+  }
+
+  .navbar nav ul {
+    font-size: 1.563em;
+  }
+
+  main {
+    z-index: 1;
+    margin-top: 0%;
+  }
+
+  .curve {
+    grid-column: 1/13;
+    position: relative;
+    top: 78px;
+  }
+}
+@media (min-width: 1500px) {
   header .navbar {
     display: grid;
     grid-column: 6/12;
@@ -176,7 +230,7 @@ main {
   }
 
   header .navbar ul li a:hover {
-    color: #996C3F;
+    color: #996c3f;
   }
 
   header .hero {
@@ -209,6 +263,11 @@ main {
 
   #inside {
     grid-column: 1/12;
+  }
+
+  main {
+    z-index: 1;
+    margin-top: 10%;
   }
 }
 @media (min-width: 1500px) {

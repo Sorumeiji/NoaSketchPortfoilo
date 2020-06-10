@@ -5,11 +5,6 @@ header {
     grid-template-columns: repeat(12, 1fr);
 }
 
-main {
-    z-index: 1;
-    margin-top: 10%;
-}
-
 .curve {
     grid-column: 1 /13;
     position: sticky;
