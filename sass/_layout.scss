@@ -1,16 +1,39 @@
-main,
 header {
     height: 100%;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    background-color: #292929;
 }
 
-.curve {
-    grid-column: 1 /13;
+main {
+    height: 100%;
+    max-width: 100%;
+    display: grid;
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.wave {
     position: sticky;
-    margin-top: -35px;
+    z-index: 999;
+    display: block;
+    top: 100%;
+    grid-column: 1 / 13;
 }
 
-.curve svg {
-    width: 100%;
-}
+
+// .flex {
+//     display: flex;
+//     flex-flow: row wrap;
+//     justify-content: space-between;
+//     --columns: 12;
+// }
+
+// *[class^="row"] {
+//     --width: 12;
+//     --gap-constant: 0.3%;
+//     --initialbasis: calc(var(--width) / var(--columns) * 100%);
+//     --gap: calc((var(--columns) - var(--width)) * var(--gap-constant, 0.3%));
+//     flex-basis: calc(var(--initialbasis) - var(--gap));
+// }
