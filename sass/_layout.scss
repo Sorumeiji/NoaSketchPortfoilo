@@ -1,9 +1,14 @@
 header {
     height: 100%;
-    width: 100%;
+    max-width: 100%;
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    background-color: #292929;
+    grid-template-columns: auto-fit, repeat(auto-fit, 1fr);
+    background-color: #E7E4DD;
+    background: url(/images/header.png) no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 main {
