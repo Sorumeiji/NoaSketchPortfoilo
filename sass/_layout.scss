@@ -1,14 +1,20 @@
 header {
     height: 100%;
     max-width: 100%;
-    display: grid;
-    grid-template-columns: auto-fit, repeat(auto-fit, 1fr);
-    background-color: #E7E4DD;
-    background: url(/images/header.png) no-repeat center;
+    background: url(/images/header.png) no-repeat center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    background-color: #E7E4DD;
+
+}
+
+header h1 {
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 main {
@@ -26,7 +32,6 @@ main {
     top: 100%;
     grid-column: 1 / 13;
 }
-
 
 // .flex {
 //     display: flex;

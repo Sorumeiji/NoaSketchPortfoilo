@@ -1,9 +1,11 @@
 .navbar {
-    grid-column: 8 / 13;
+    text-align: right;
+    margin-right: 5%;
 }
 
 .navbar ul {
     display: inline;
+
 }
 
 .navbar ul li {
@@ -14,8 +16,13 @@
     display: inline-block;
     text-decoration: none;
     text-transform: uppercase;
-    margin-left: 3%;
+    margin-left: 1%;
     margin-top: 3%;
+    margin-bottom: 3%;
     color: #474747;
     font-family: 'Montserrat', sans-serif;
+}
+
+.navbar ul li a:hover {
+    color: #474747;
 }
