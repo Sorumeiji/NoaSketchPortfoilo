@@ -1,7 +1,7 @@
 header {
-    height: 100%;
+    min-height: 100%;
     max-width: 100%;
-    background: url(/images/header.png) no-repeat center fixed;
+    background: url(/images/header.png) no-repeat center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -18,11 +18,40 @@ header h1 {
 }
 
 main {
-    height: 100%;
+    min-height: 100%;
     max-width: 100%;
     display: grid;
     width: 1300px;
     margin: 0 auto;
+}
+
+
+section {
+    min-height: 100%;
+    max-width: 100%;
+    display: grid;
+    margin: 0 auto;
+}
+
+
+.introduction {
+    height: 100vh;
+}
+
+.portfolio-featured {
+    height: 100vh;
+}
+
+.twitch {
+    height: 100vh;
+}
+
+.footer {
+    height: 100%;
+}
+
+.commissions {
+    height: 100vh;
 }
 
 .wave {

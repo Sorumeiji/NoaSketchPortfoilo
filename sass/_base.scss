@@ -30,6 +30,8 @@ img {
 h1 {
     font-family: 'Laila', serif;
     color: #474747;
+    position: relative;
+    z-index: 999;
 }
 
 h2 {
@@ -37,7 +39,22 @@ h2 {
     color: #474747;
 }
 
+p {
+    font-size: 1.25em;
+    color: #474747;
+}
+
+p>*+* {
+    margin-top: 1.5rem;
+}
+
 .light {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
+}
+
+.laila {
+    font-family: 'Laila', serif;
+    font-weight: 600;
+    font-size: 1.563em;
 }
