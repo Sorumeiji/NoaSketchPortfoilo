@@ -10,6 +10,7 @@ html,
 body {
     font-size: 100%;
     width: 100%;
+    background-color: #EDEDEC;
 }
 
 ul {
@@ -18,14 +19,37 @@ ul {
     list-style-type: none;
 }
 
+img,
+svg {
+    width: 100%;
+}
+
+.logo {
+    width: 70%;
+}
+
 ul li {
     display: inline-block;
+}
+
+ul li a {
+    margin-right: 1em;
+    color: #474747;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a:hover {
+    color: #E7A14B;
 }
 
 
 header {
     width: 100%;
-    background-color: red;
+    height: 100vh;
+    background: url(/images/header.png) no-repeat center center fixed;
+    background-color: #E7E4DD;
+
 }
 
 .content {
@@ -35,13 +59,11 @@ header {
 
 nav {
     display: flex;
-    justify-content: center;
-    padding: 40px 60px;
 }
 
 .title {
     display: flex;
     flex-flow: column wrap;
     align-content: center;
-    padding: 40px 60px;
+    padding: 100px 60px;
 }

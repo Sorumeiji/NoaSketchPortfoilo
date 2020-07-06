@@ -10,6 +10,7 @@ html,
 body {
   font-size: 100%;
   width: 100%;
+  background-color: #EDEDEC;
 }
 
 ul {
@@ -18,13 +19,35 @@ ul {
   list-style-type: none;
 }
 
+img,
+svg {
+  width: 100%;
+}
+
+.logo {
+  width: 70%;
+}
+
 ul li {
   display: inline-block;
 }
 
+ul li a {
+  margin-right: 1em;
+  color: #474747;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+a:hover {
+  color: #E7A14B;
+}
+
 header {
   width: 100%;
-  background-color: red;
+  height: 100vh;
+  background: url(/images/header.png) no-repeat center center fixed;
+  background-color: #E7E4DD;
 }
 
 .content {
@@ -34,15 +57,44 @@ header {
 
 nav {
   display: flex;
-  justify-content: center;
-  padding: 40px 60px;
 }
 
 .title {
   display: flex;
   flex-flow: column wrap;
   align-content: center;
+  padding: 100px 60px;
+}
+
+header nav {
   padding: 40px 60px;
+  justify-content: center;
+}
+
+@media (min-width: 1500px) {
+  header nav {
+    justify-content: end;
+  }
+}
+.custom-shape-divider-bottom-1594005624 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1594005624 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.custom-shape-divider-bottom-1594005624 .shape-fill {
+  fill: #EDEDEC;
 }
 
 /*# sourceMappingURL=main.css.map */
