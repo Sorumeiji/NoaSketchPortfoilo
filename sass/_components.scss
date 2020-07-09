@@ -1,0 +1,29 @@
+.button {
+    display: inline-block;
+    padding: 1em 2.2em;
+    border: 0.1em solid #474747;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: #474747;
+    text-align: center;
+    transition: all 0.2s;
+    transition: background-color 0.5s ease;
+}
+
+.button:hover {
+    color: #e3e3e3;
+    background-color: #E7A14B;
+    border: 0.1em solid transparent;
+}
+
+.line {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 1000px;
+    height: 2px;
+    background: #474747;
+}

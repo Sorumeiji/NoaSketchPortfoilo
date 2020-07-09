@@ -1,11 +1,11 @@
-header nav {
+.navbar {
     padding: 40px 60px;
     justify-content: center;
 }
 
 @media(min-width:1500px) {
-    header nav {
-        justify-content: end;
+    .navbar {
+        justify-content: flex-end;
     }
 }
 
@@ -14,8 +14,7 @@ header nav {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%;
-    overflow: hidden;
+    width: 100%;overflow: hidden;
     line-height: 0;
     transform: rotate(180deg);
 }

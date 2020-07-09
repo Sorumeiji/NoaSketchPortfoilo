@@ -1,0 +1,44 @@
+.noa-intro,
+.noa-intro-viewportfolio {
+    margin-top: 20%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.noa-portfolio-skills {
+    margin-top: 10%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.noa-portfolio-skills>ul {
+    padding: 0 3.052em;
+    color: #474747;
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+}
+
+.noa-portfolio-skills>ul li {
+    display: block;
+    font-size: 1.25em;
+    margin-top: 20%;
+}
+
+.noa-portfolio-skills>ul li h4 {
+    font-weight: 600;
+    font-size: 1.563em;
+    display: block;
+}
+
+.noa-intro>p,
+    {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.noa-intro img {
+    width: 50%;
+    text-align: center;
+}
