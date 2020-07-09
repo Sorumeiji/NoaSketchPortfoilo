@@ -3,7 +3,5 @@
 @import '_images.scss';
 @import '_type.scss';
 @import '_layout.scss';
-@import 'Landingpage/_header.scss';
-@import 'Landingpage/_navigation.scss';
-@import 'Landingpage/_portfolio.scss';
-@import 'Landingpage/_introduction.scss'
+@import '_layout-header.scss';
+@import '_layout-main.scss';

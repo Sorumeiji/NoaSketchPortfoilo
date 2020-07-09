@@ -1,56 +1,29 @@
-input {
-    padding: 0.5% 1%;
-    margin-top: 2%;
-    outline: none;
-    box-shadow: none;
-    border-radius: 3px;
-    border: 1px solid transparent;
-    text-decoration: none;
-    font-family: 'Laila', serif;
-    font-weight: 600;
-    cursor: pointer;
-}
-
-.button-black {
-    background-color: #474747;
-    color: #C4996D;
-}
-
-
-
-.hvr-fade:active,
-.hvr-fade:focus,
-.hvr-fade:hover {
-    background-color: #C4996D;
-    color: #474747;
-}
-
-
 .button {
     display: inline-block;
-    padding: 0.55em 1.5em;
+    padding: 1em 2.2em;
     border: 0.1em solid #474747;
     margin: 0 0.3em 0.3em 0;
     border-radius: 0.12em;
-    margin-top: 2%;
     box-sizing: border-box;
-    font-family: 'Laila', serif;
     text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     color: #474747;
     text-align: center;
     transition: all 0.2s;
+    transition: background-color 0.5s ease;
 }
 
 .button:hover {
-    background-color: #474747;
-    color: #C4996D;
-    border: 1px solid transparent;
+    color: #e3e3e3;
+    background-color: #E7A14B;
+    border: 0.1em solid transparent;
 }
 
-@media all and (max-width:30em) {
-    .button {
-        display: block;
-        margin: 0.4em auto;
-    }
+.line {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 1000px;
+    height: 2px;
+    background: #474747;
 }
