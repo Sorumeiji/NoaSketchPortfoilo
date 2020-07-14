@@ -4,11 +4,10 @@
 A repository for NoaSketch's Art Portfolio
 
 
-## Built With
+## Built With or Soon to Be
 
 * [CSS Grid / Flexbox] ( https://developer.mozilla.org/en-US/docs/Web/CSS/grid ) - CSS Layouts
 * [Angular](https://angular.io/) - JavaScript Framework
-* [React JS](https://reactjs.org/) - JavaScript Framework
 * [HTML5] (https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
 
 
