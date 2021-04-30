@@ -12,7 +12,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="sass/hover-min.css" />
+  <link rel="stylesheet" type="text/css" href="/styles/styles.css" />
   <!-- <link rel="stylesheet" type="text/css" href="sass/main.css" /> -->
   <!-- displays site properly based on user's device -->
   <title>NOASKETCH | ILLUSTRATOR & DESIGNER</title>
@@ -23,8 +23,8 @@
   <div class="container">
 
     <header class="header">
-      <div class="header_borderline"><span></span></div>
-      <nav class="header_nav-main">
+      <div class="header__borderline"><span></span></div>
+      <nav class="header__nav-main">
         <ul>
           <li>Home</li>
           <li>portfolio</li>
@@ -32,7 +32,7 @@
           <li>contact me</li>
         </ul>
       </nav>
-      <nav class="header_nav-social">
+      <nav class="header__nav-social">
         <ul>
           <li>Instagram</li>
           <li>Twitter</li>
@@ -40,26 +40,118 @@
           <li>Patreon</li>
         </ul>
       </nav>
-      <h1 class="header_title">NOASKETCH</h1>
-      <h2 class="header_subtile">ILLUSTRASTOR & DESIGNER</h2>
-      <p class="header_quote">“ Whenever someone creates something with all of their heart, then that creation is given
+      <h1 class="header__title">NOASKETCH</h1>
+      <h2 class="header__subtile">ILLUSTRASTOR & DESIGNER</h2>
+      <p class="header__quote">“ Whenever someone creates something with all of their heart, then that creation is given
         a soul ” -- The Cat Returns (2002) </p>
       <a href="#">Read My Story</a>
     </header>
 
     <section class="summary">
-      <img class="summary_img" src="https://source.unsplash.com/random/520x600" />
-      <h2 class="summary_subtitle">I’m a professional Illustrator and designer residing in the country
+      <img class="summary__img" src="https://placeimg.com/520/600/any" />
+      <h2 class="summary__subtitle">I’m a professional Illustrator and designer residing in the country
         of Colombia.</h2>
-      <p class="summary_text">In a place where there are tons of mountains of coffee, who also prides herself in
+      <p class="summary__text">In a place where there are tons of mountains of coffee, who also prides herself in
         narrative art and storytelling. As a Twitch partner also, I broadcast my work online almost everyday surrounded
         by an amazing community who are supporters of my works.
         narrative art and storytelling. As a Twitch partner also, I broadcast my work online almost everyday surrounded
         by an amazing community who are supporters of my works. </p>
-      <p class="summary_text">My inspiration comes from my love of studio ghibli and how they create deep and relaxing
+      <p class="summary__text">My inspiration comes from my love of studio ghibli and how they create deep and relaxing
         worlds. My goal is to be able to create that kind of feeling in my works too and create similar worlds.</p>
     </section>
+
+    <section class="quote">
+      <p class="quote__text">
+        “My works are displays of digital and traditional art. standing out for its unique story book presentation,and
+        particular style.“
+      </p>
+    </section>
+
+    <section class="portfolio">
+      <div class="portfolio__item">
+        <img class="portfolio__img" src="https://placeimg.com/825/500/any" />
+      </div>
+      <div class="portfolio__item">
+        <img class="portfolio__img" src="https://placeimg.com/545/500/any" />
+      </div>
+      <div class="portfolio__item">
+        <img class="portfolio__img" src="https://placeimg.com/260/377/any" />
+      </div>
+      <div class="portfolio__item">
+        <img class="portfolio__img" src="https://placeimg.com/402/377/any" />
+      </div>
+      <div class="portfolio__item">
+        <img class="portfolio__img" src="https://placeimg.com/684/377/any" />
+      </div>
+      <div class="portfolio__item">
+        <img class="portfolio__img" src="https://placeimg.com/685/377/any" />
+      </div>
+      <div class="portfolio__item">
+        <img class="portfolio__img" src="https://placeimg.com/685/377/any" />
+      </div>
+      <div class="portfolio__item">
+        <img class="portfolio__img" src="https://placeimg.com/261/377/any" />
+      </div>
+      <div>
+        <img class="portfolio__img" src="https://placeimg.com/261/377/any" />
+      </div>
+      <div class="portfolio__item">
+        <img class="portfolio__img" src="https://placeimg.com/830/377/any" />
+      </div>
+    </section>
+
+
+    <section class="services">
+      <div class="services__item">
+        <h4>l.</h4>
+        <h1>Branding</h1>
+      </div>
+      <div class="services__item">
+        <h4>ll.</h4>
+        <h1>Logo Design</h1>
+      </div>
+      <div class="services__item">
+        <h4>lll.</h4>
+        <h1>Tradtional Art</h1>
+      </div>
+      <div class="services__item">
+        <h4>lV.</h4>
+        <h1>Twitch Assets</h1>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="contact__subtitle">
+        <h2> Connect with the heart of others </h2>
+      </div>
+      <div class="contact__forum">
+        <h2 class="contact___forum__subtitle">Contact Me</h2>
+        <form class="contact___forum__data" action="/action_page.php"> <input type="text" id="name" name="name"
+            placeholder="First Name">
+          <input type="email" id="email" name="email" placeholder="Last Name"><br><br>
+          <input type="url" id="url" name="url" placeholder="Email"><br><br>
+          <textarea id="description" name="description" placeholder="Tell me about your idea..."></textarea><br><br>
+          <button>Send</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <ul class="footer__terms">
+        <li>Terms of Service</li>
+        <li>Secuirty</li>
+        <li><img src="https://placeimg.com/242/58/any" /> </li>
+        <li>Site Map</li>
+        <li>Privacy Policy</li>
+      </ul>
+      <div class="borderline-hr"></div>
+      <ul class="footer__social" role="list">
+        <li class="footer__social__item"><a href="#"><i class="fab fa-discord"></i> discord</a></li>
+        <li class="footer__social__item"><a href="#"><i class="fab fa-twitter"></i> twitter</a></li>
+        <li class="footer__social__item"><a href="#"><i class="fab fa-twicth"></i> Twitch</a></li>
+      </ul>
+    </footer>
   </div>
-</body> <!-- <script src="/js/main.js"></script> -->
+</body>
 
 </html>
