@@ -508,3 +508,94 @@ select {
   transition: all .4s ease;
   -webkit-transition: all .4s ease;
 }
+
+
+.footer {
+    background-color: #131313;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__terms{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2.5em;
+}
+
+.borderline-hr{
+    content: '';
+    width: 60%;
+    height: 1px;
+    margin: 2em  2.5em;
+    justify-self: center;
+    align-self: center;
+    background: #E6E2DD;
+    opacity: 0.5;
+}
+
+.footer__terms li {
+  margin-left: 2em;
+  text-transform: capitalize;
+  font-family: var(--font-text);
+  color: #E6E2DD;
+}
+
+
+.footer__terms li a {
+  list-style: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-family: var(--font-text);
+  color: #E6E2DD;
+}
+
+
+.footer__terms li a:hover {
+  opacity: 0.9;
+  color: #CA785D;
+  transition: color 0.5s linear; 
+  -webkit-transition: all .4s ease;
+}
+
+
+.footer__logo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -1em;
+}
+
+.footer__logo h3,.footer__logo h4::selection{
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.footer__title {
+  text-transform: capitalize;
+  font-family: var(--font-title);
+  font-size: 2rem;
+}
+
+.footer__subtile{
+  text-transform: capitalize;
+  font-family: var(--font-title);
+  font-size: 0.733rem;
+}
+
+.footer__copy{
+  font-family: var(--font-title);
+  font-size: 0.733rem;
+  text-transform: uppercase;
+  color: #E6E2DD;
+}
