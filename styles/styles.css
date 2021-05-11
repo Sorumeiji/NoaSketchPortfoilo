@@ -396,7 +396,7 @@ select {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("/images/bg.png");
+  background-image: url("./images/bg.png");
 }
 
 .contact__subtitle{
