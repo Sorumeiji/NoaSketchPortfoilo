@@ -39,6 +39,18 @@ p, li, a {
   font-family: var(--font-text);
 }
 
+
+a {
+  transition: color .4s;
+  color: #265C83;
+}
+a:link,
+a:active  {
+  transition: color .3s;
+  /* color: #007BE6; */
+}
+.link { text-decoration: none; }
+
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul[role='list'],
 ol[role='list'] {
@@ -238,8 +250,8 @@ select {
   left: 5px;
   right: 5px;
   border: 1px solid rgba(202, 120, 93, 0.5);
-  transition: all .4s ease;
-  -webkit-transition: all .4s ease;
+  /* transition: all .4s ease;
+  -webkit-transition: all .4s ease; */
 }
 
 .header__button:hover{
@@ -363,7 +375,7 @@ select {
 }
 
 .portfolio__item{
-  margin-right: 0.5em;
+  margin-right: 0.3em;
   cursor: pointer;
 }
 
@@ -371,7 +383,7 @@ select {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 0.5em;
+  margin-top: 0.3em;
 }
 
 /* services */
@@ -539,8 +551,8 @@ select {
   /* background-color: #111925; */
   color: #111925;
   border: 1px solid rgba(36, 54, 80, 0.5);
-  transition: all .4s ease;
-  -webkit-transition: all .4s ease;
+  /* transition: all .4s ease;
+  -webkit-transition: all .4s ease; */
 }
 
 .contact__button:hover::after {
@@ -598,8 +610,8 @@ select {
 .footer__terms li a:hover {
   opacity: 0.9;
   color: #CA785D;
-  transition: color 0.5s linear; 
-  -webkit-transition: all .4s ease;
+  /* transition: color 0.5s linear; 
+  -webkit-transition: all .4s ease; */
 }
 
 
