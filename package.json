@@ -1,0 +1,23 @@
+{
+  "name": "noasketchportfoilo",
+  "version": "1.0.0",
+  "description": "NoaSketch Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "cleanup": "del -f .cache dist",
+    "dev": "npm run cleanup && parcel ./index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sorumeiji/NoaSketchPortfoilo.git"
+  },
+  "author": "Kaleb Berry",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sorumeiji/NoaSketchPortfoilo/issues"
+  },
+  "homepage": "https://github.com/Sorumeiji/NoaSketchPortfoilo#readme",
+  "devDependencies": {
+    "sass": "^1.32.13"
+  }
+}
