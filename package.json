@@ -19,5 +19,9 @@
   "homepage": "https://github.com/Sorumeiji/NoaSketchPortfoilo#readme",
   "devDependencies": {
     "sass": "^1.32.13"
+  },
+  "dependencies": {
+    "@dogstudio/highway": "^2.2.1",
+    "gsap": "^3.6.1"
   }
 }
