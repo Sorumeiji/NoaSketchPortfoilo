@@ -1,13 +1,15 @@
-@import 'base/reset';
-@import 'base/typegraphy';
+@import "base/reset";
+@import "base/typography";
+@import "base/colors";
+@import "base/root";
 
-@import 'layout/navigation';
-@import 'layout/header';
-@import 'layout/footer';
+@import "componets/buttons";
 
-@import 'components/buttons';
-@import 'components/carousel';
-@import 'components/slider';
+@import "layout/grid";
+@import "layout/navigation";
+@import "layout/header";
 
-@import 'pages/landing';
-@import 'pages/commission';
+@import "pages/landing";
+@import "layout/footer";
+
+@import "base/media-queries";

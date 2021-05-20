@@ -1,0 +1,53 @@
+.services {
+    background-color: #202F46;
+    padding-top: 10em;
+    padding-bottom: 15em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .services__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 80%;
+    padding: 4em;
+    margin: 0.5em 0;
+    border: 1px solid rgba(202, 120, 93, 0.5);
+    color: #E6E2DD;
+    font-family: var(--font-title);
+  }
+  .services__item:hover {
+    background-color: #111925;
+    color: #CA785D;
+    border: 1px solid rgba(17, 25, 37, 0.5);
+    -webkit-transition: color 0.5s linear;
+    transition: color 0.5s linear;
+    -webkit-transition: all .4s ease;
+    cursor: pointer;
+  }
+  .services__item h4 {
+    justify-self: flex-start;
+    font-size: 1.44rem;
+  }
+  .services__item h1 {
+    margin: 0px auto;
+    font-size: 1.728rem;
+    text-transform: uppercase;
+  }
